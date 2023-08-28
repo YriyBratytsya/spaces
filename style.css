@@ -1,0 +1,251 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.header-title {
+    background-color: #1d1d23;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+  
+}
+.header-title .title {
+      color: aliceblue;
+      text-align: center;
+}
+.media-icon {
+    display: flex;
+    justify-content: end;
+}
+.media-icon .a1{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b2b4a;
+    background-image: url(images/google.png);
+    background-position: 8px 9px;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+.a1:hover {
+    background-color: orange;
+    transition: 0.4s ease-in-out;
+}
+.media-icon .a2{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b2b4a;
+    background-image: url(images/camera.png);
+    background-position: 8px 9px;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+.a2:hover {
+    background-color: pink;
+    transition: 0.4s ease-in-out;
+}
+.media-icon .a3{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b2b4a;
+    background-image: url(images/twitter.png);
+    background-position: 8px 9px;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+.a3:hover {
+    background-color: red;
+    transition: 0.4s ease-in-out;
+}
+.media-icon .a4{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b2b4a;
+    background-image: url(images/facebook.png);
+    background-position: 8px 9px;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+.a4:hover {
+    background-color: purple;
+    transition: 0.4s ease-in-out;
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b2b4a;
+    padding: 15px 25px;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu a {
+    color: white;
+    margin-right: 30px;
+    position: relative;
+}
+.menu a:hover {
+    color: gold;
+}
+.menu a:after {
+    content: "";
+    position: absolute;
+    background-color: gold;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s; 
+}
+.menu a:hover:after {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+/* section welcome */
+
+.welcome {
+    padding: 120px 15px;
+    color: white;
+    background-image: url(images/space.avif);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.welcome p {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-left: 50px;
+
+}
+.welcome h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 60px 0;
+}
+.welcome a {
+    color: white;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.welcome a::before {
+    content: ">";
+    color: white;
+    margin-right: 5px;
+}
+.welcome a:hover {
+    color: gold;
+}
+
+/* section niche */
+
+.niche-themes {
+     background-color: #2b2b4a;
+}
+.niche {
+   
+    text-align: center;
+    padding: 50px 0;
+}
+.niche h2 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+}
+.photo {
+    margin: 15px;
+    position: relative;
+}
+.photo:hover {
+    opacity: 0.5;
+}
+.photo a {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top:125px;
+    left: 85px;
+    display: none;
+}
+.photo:hover a {
+    display: block;
+}
+
+/* section spacex */
+
+.spacex {
+    background-color: #1d1d23;
+}
+.spacex p {
+    font-size: 30px;
+    color: rgb(253, 170, 170);
+}
+.spacex h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(253, 170, 170);
+    margin: 50px 0;
+}
+.spacex button {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: white;
+    font-size: 25px;
+}
+.spacex button:hover {
+    background-color: white;
+    color: black;
+}
+
+[class*="universe"] {
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 100px 15px 100px 50px;
+    margin: 15px 0;
+}
+.universe {
+    background-image: url(images/uni1.webp); 
+} 
+.universe2 {
+    background-image: url(images/uni2.webp);
+} 
+.universe3 {
+    background-image: url(images/uni3.jpg);
+}  
+
+
+
+
+
+
